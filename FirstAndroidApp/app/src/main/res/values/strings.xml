@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">FirstAndroidApp</string>
+    <string name="userNameTextBoxText">Username Goes Here</string>
+    <string name="loginButtonText">Login</string>
+    <string name="Author">Paul T. Maack</string>
+    <string name="lorem_ipsum">Lorem Ipsum</string>
+    <string name="order">Order</string>
+    <string name="chaos">Chaos</string>
+    <string name="evil">Evil</string>
+    <string name="good">Good</string>
+
+
+    <string-array name="buttons_array">
+        <item>Good</item>
+        <item>Evil</item>
+        <item>Order</item>
+        <item>Chaos</item>
+    </string-array>
 </resources>
