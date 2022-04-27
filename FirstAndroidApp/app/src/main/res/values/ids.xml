@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="textView" type="id">textView</item>
+<!--    <item name="button" type="id">button</item>-->
+    <item name="fab" type="id">floatingActionButton</item>
+</resources>

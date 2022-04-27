@@ -10,6 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstAndroidApp">
         <activity
+            android:name=".MovieDetail"
+            android:exported="false" />
+<!--        <activity-->
+<!--            android:name="Movies"-->
+<!--            android:exported="false"-->
+<!--            android:label="@string/title_activity_movie_detail"-->
+<!--            android:theme="@style/Theme.FirstAndroidApp.NoActionBar" />-->
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

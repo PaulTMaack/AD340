@@ -1,15 +1,17 @@
 package com.paultmaack.FirstAndroidApp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
-import android.content.res.Resources;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
-import android.widget.GridView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -26,66 +28,68 @@ public class MainActivity extends AppCompatActivity {
         loginConfirmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Context context = getApplicationContext();
-
-                CharSequence text = loginConfirmButton.getText();
-                int duration = Toast.LENGTH_SHORT;
-
-                Toast toast = Toast.makeText(context, text, duration);
-                toast.show();
+                Intent intent = new Intent(MainActivity.this, MovieDetail.class);
+                startActivity(intent);
+//                Context context = getApplicationContext();
+//
+//                CharSequence text = loginConfirmButton.getText();
+//                int duration = Toast.LENGTH_SHORT;
+//
+//                Toast toast = Toast.makeText(context, text, duration);
+//                toast.show();
             }
         });
-        Button goodButton = findViewById(R.id.goodButton);
-        goodButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Context context = getApplicationContext();
-
-                CharSequence text = goodButton.getText();
-                int duration = Toast.LENGTH_SHORT;
-
-                Toast toast = Toast.makeText(context, text, duration);
-                toast.show();
-            }
-        });
-        Button evilButton = findViewById(R.id.evilButton);
-        evilButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Context context = getApplicationContext();
-
-                CharSequence text = evilButton.getText();
-                int duration = Toast.LENGTH_SHORT;
-
-                Toast toast = Toast.makeText(context, text, duration);
-                toast.show();
-            }
-        });Button chaosButton = findViewById(R.id.chaosButton);
-        chaosButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Context context = getApplicationContext();
-
-                CharSequence text = chaosButton.getText();
-                int duration = Toast.LENGTH_SHORT;
-
-                Toast toast = Toast.makeText(context, text, duration);
-                toast.show();
-            }
-        });
-        Button orderButton = findViewById(R.id.orderButton);
-        orderButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Context context = getApplicationContext();
-
-                CharSequence text = orderButton.getText();
-                int duration = Toast.LENGTH_SHORT;
-
-                Toast toast = Toast.makeText(context, text, duration);
-                toast.show();
-            }
-        });
+//        Button goodButton = findViewById(R.id.goodButton);
+//        goodButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Context context = getApplicationContext();
+//
+//                CharSequence text = goodButton.getText();
+//                int duration = Toast.LENGTH_SHORT;
+//
+//                Toast toast = Toast.makeText(context, text, duration);
+//                toast.show();
+//            }
+//        });
+//        Button evilButton = findViewById(R.id.evilButton);
+//        evilButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Context context = getApplicationContext();
+//
+//                CharSequence text = evilButton.getText();
+//                int duration = Toast.LENGTH_SHORT;
+//
+//                Toast toast = Toast.makeText(context, text, duration);
+//                toast.show();
+//            }
+//        });Button chaosButton = findViewById(R.id.chaosButton);
+//        chaosButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Context context = getApplicationContext();
+//
+//                CharSequence text = chaosButton.getText();
+//                int duration = Toast.LENGTH_SHORT;
+//
+//                Toast toast = Toast.makeText(context, text, duration);
+//                toast.show();
+//            }
+//        });
+//        Button orderButton = findViewById(R.id.orderButton);
+//        orderButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Context context = getApplicationContext();
+//
+//                CharSequence text = orderButton.getText();
+//                int duration = Toast.LENGTH_SHORT;
+//
+//                Toast toast = Toast.makeText(context, text, duration);
+//                toast.show();
+//            }
+//        });
 
         //gridview.setAdapter(new ButtonAdapter(this));
 
@@ -141,5 +145,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
 
 }
